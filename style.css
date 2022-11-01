@@ -34,7 +34,7 @@ body {
 
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: minmax(10vh, max-content) 1fr;
 
   grid-template-areas:
     "sidebar header"
@@ -227,12 +227,109 @@ h3 {
 .trending__profile {
   width: 3rem;
   height: 3rem;
+  min-width: 3rem;
   overflow: clip;
   box-shadow: var(--card-shadow);
   border-radius: 50%;
+  cursor: pointer;
 }
 .trending__profile > img {
   width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  gap: var(--gap);
+  padding: var(--gap);
+}
+
+.header > .top,
+.header > .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: calc(var(--gap) * 3.0);
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: var(--gap);
+  flex: 1;
+}
+.search input {
+  border: none;
+  background-color: var(--c-rhythm);
+  border-radius: var(--gap);
+  width: min(100%, 30rem);
+  height: 1.8em;
+  color: var(--c-ghost-white);
+  padding: var(--gap);
+}
+
+.search svg {
+  cursor: pointer;
+}
+.search svg:hover {
+  transform: scale(1.1);
+}
+
+.greeting {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: var(--gap);
+}
+.greeting p {
+  font-size: 0.8em;
+}
+
+.account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--gap);
+  font-size: 0.8em;
+  cursor: pointer;
+}
+.account .trending__profile {
+  width: 2rem;
+  height: 2rem;
+  min-width: 2rem;
+}
+
+.account svg:hover {
+  transform: scale(1.1);
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.actions input {
+  border: none;
+  padding: calc(var(--gap) * 0.5) var(--gap);
+  border-radius: var(--gap);
+  background-color: var(--c-russian-violet);
+  color: var(--c-ghost-white);
+  cursor: pointer;
+  margin: 0;
+  box-shadow: none;
+}
+.actions input:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 700px) {
@@ -278,5 +375,13 @@ h3 {
   .sidebar__navigation,
   .sidebar__settings {
     flex-direction: row;
+  }
+
+  .greeting {
+    display: none;
+  }
+
+  .header > .bottom {
+    justify-content: center;
   }
 }
