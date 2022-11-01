@@ -224,7 +224,7 @@ h3 {
   cursor: pointer;
 }
 
-.trending__profile {
+.profile-pic {
   width: 3rem;
   height: 3rem;
   min-width: 3rem;
@@ -233,7 +233,7 @@ h3 {
   border-radius: 50%;
   cursor: pointer;
 }
-.trending__profile > img {
+.profile-pic > img {
   width: 100%;
 }
 
@@ -300,7 +300,7 @@ h3 {
   font-size: 0.8em;
   cursor: pointer;
 }
-.account .trending__profile {
+.account .profile-pic {
   width: 2rem;
   height: 2rem;
   min-width: 2rem;
