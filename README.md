@@ -7,7 +7,7 @@ This admin dashboard is an exercise in CSS grid and flexbox, for [The Odin Proje
 
 ## Demo
 
-[Link to Example](https://omalsa04.github.io/admin-dashboard/)
+[Link to Dashboard](https://omalsa04.github.io/admin-dashboard/)
 
 ## To run locally
 
