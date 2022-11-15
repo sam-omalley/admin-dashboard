@@ -1,5 +1,5 @@
 
-[![GitHub issues](https://img.shields.io/github/issues/omalsa04/admin-dashboard)](https://github.com/omalsa04/admin-dashboard/issues)
+[![GitHub issues](https://img.shields.io/github/issues/sam-omalley/admin-dashboard)](https://github.com/sam-omalley/admin-dashboard/issues)
  
 # Admin Dashboard
 
@@ -7,7 +7,7 @@ This admin dashboard is an exercise in CSS grid and flexbox, for [The Odin Proje
 
 ## Demo
 
-[Link to Dashboard](https://omalsa04.github.io/admin-dashboard/)
+[Link to Dashboard](https://sam-omalley.github.io/admin-dashboard/)
 
 ## To run locally
 
